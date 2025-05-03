@@ -3,7 +3,7 @@ use std::env;
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() != 3 {
-        panic!("Invalid arguments: try convert 32 F");
+        panic!("Invalid arguments: try converter 32 F");
     }
     let degrees: f32 = match args[1].parse() {
         Ok(v) => v,
